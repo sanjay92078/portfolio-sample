@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playfair Display", serif;
+
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 200px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.links:hover{
+    color: red;
+    text-decoration: underline;
+}
+.section-content{
+    margin: 13% 0px 0px 8%;
+}
+#username{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "Halant", serif;
+}
+.lname{
+    color: gold;
+    font-family: "Halant", serif;
+
+}
+#userdetails{
+    line-height: 1.6;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-family: "Lobster", sans-serif;
+}
+.section-img{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+.section-img:hover #shape{
+    bottom: 70px;
+}
+.section-img:hover #girl{
+    left: 30%;
+}
+#about{
+    margin: 18% 8% 0px 8%;
+}
+.sectionhead{
+    text-align: center;
+}
+.mainhead{
+    font-size: 30px;
+}
+.subhead{
+    font-size: 20px;
+    color: green;
+}
+.aboutbody{
+    margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 50px;
+   align-items: center;
+}
+.img1{
+    width: 50%;
+}
+.aboutcontent{
+    font-size: 15px;
+    text-align: justify;
+}
+.informations{
+    margin-top: 1.3rem;
+
+}
+.infobox{
+    margin-bottom: 10px;
+    
+}
+.infobox>span{
+    margin-left: 1rem;
+
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.barpercent{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    width: 93%;
+    background-color: orangered;
+}
+.CSSbar{
+    width: 98%;
+    background-color: orangered;
+}
+.JSbar{
+    width: 78%;
+    background-color: orangered;
+}
+.reactbar{
+    width: 89%;
+    background-color: orangered;
+}
+.iconcollections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(225, 10, 139),yellow,green);
+}
+.icon:hover .brands{
+    color: white;
+    animation: rotate 3s;
+}
+/* animation giving */
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin-top: 8%;
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.uparrow{
+    float: right;
+    margin: -40px 20px 20px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+ ::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+ ::-webkit-scrollbar-track{
+    background-color: yellow;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+}
+
